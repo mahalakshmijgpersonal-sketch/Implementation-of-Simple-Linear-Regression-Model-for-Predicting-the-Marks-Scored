@@ -10,38 +10,47 @@ To write a program to predict the marks scored by a student using the simple lin
 ## Algorithm
 ### Algorithm: Simple Linear Regression for Predicting Marks
 
-1. **Start**
-2. Enter the input data:
+1. Start
 
-   * `X` = Number of hours studied
-   * `Y` = Marks scored
-3. Calculate the mean of `X` and `Y`.
-4. Calculate the **slope (b₁)** using:
-   [
-   b_1 = \frac{\sum (X-\bar X)(Y-\bar Y)}
-   {\sum (X-\bar X)^2}
-   ]
-5. Calculate the **intercept (b₀)** using:
-   [
-   b_0 = \bar Y-b_1\bar X
-   ]
+2. Enter the values of X (Hours Studied) and Y (Marks Scored).
+
+3. Calculate the mean of X and Y.
+
+   x_mean = sum(X) / n
+
+   y_mean = sum(Y) / n
+
+4. Calculate the slope:
+
+   b1 = sum((X - x_mean) * (Y - y_mean)) / sum((X - x_mean)^2)
+
+5. Calculate the intercept:
+
+   b0 = y_mean - (b1 * x_mean)
+
 6. Form the regression equation:
-   [
-   Y=b_0+b_1X
-   ]
-7. Get the number of hours studied for a new student.
-8. Predict the marks using the regression equation.
+
+   Y = b0 + b1 * X
+
+7. Enter the number of hours studied by a new student.
+
+8. Predict the marks using:
+
+   Predicted Marks = b0 + b1 * Hours
+
 9. Display the predicted marks.
+
 10. Plot the actual data points and regression line.
-11. **Stop**.
+
+11. Stop.
 
 
 ## Program:
 ```
 /*
 Program to implement the simple linear regression model for predicting the marks scored.
-Developed by: 
-RegisterNumber:  
+Developed by: Mahalakshmi J
+RegisterNumber:  212225230162
 */
 ```
 ```
